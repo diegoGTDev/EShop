@@ -39,6 +39,7 @@ body{
     justify-items: center;
 }
 
+
 .logo{
     width: 150px;
     display: none;
@@ -50,7 +51,8 @@ body{
 .title{
     font-size: var(--lg);
     margin-bottom: 12px;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 48px;
 }
 .subtitle{
     font-size: var(--sm);
@@ -64,6 +66,12 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+
 .label{
     font-size: var(--sm);
     font-weight: bold;
@@ -90,42 +98,22 @@ body{
     font-weight: bold;
     height: 50px;
 }
-.login-button{
-    margin-top: 14px;
+
+.btn-edit
+{
+    margin-top: 25px;
     margin-bottom: 30px;
+}
 
+.input-email,
+.input-name,
+.input-password{
+    margin-bottom: 12px;
 }
-.email-image{
-    width: 132px;
-    height: 132px;
-    border-radius:50%;
-    background-color: var(--text-input-field);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
-.resend{
-    font-size: var(--sm);
-}
-.resend span{
+.label ~ p{
     color: var(--very-light-pink);
+    margin: 8px 0 32px 0;
 }
-
-.resend a{
-    color: var(--hospital-green);
-    text-decoration: none;
-}
-
-.form-container a{
-    color: var(--hospital-green);
-    font-size: var(--sm);
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 52px;
-    cursor: pointer;
-}
-
 .btn-secondary{
     border: 2px solid var(--hospital-green);
     border-radius: 8px;
@@ -139,16 +127,19 @@ body{
 
 }
 
-
 @media (max-width: 640px){
     .form-container{
         width: 350px;
+        height: 100%;
     }
+    .form{
+        justify-content: space-between;
+    }
+
     .logo{
         display: block;
     }
     .btn-secondary{
-        position: absolute;
         width: inherit;
         bottom:0;
         margin-bottom: 24px;
