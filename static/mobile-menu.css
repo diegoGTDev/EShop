@@ -21,6 +21,10 @@ body {
   padding: 24px;
 }
 
+.mobile-menu ul:last-child {
+  bottom: 0;
+  position: absolute;
+}
 .mobile-menu a {
   text-decoration: none;
   font-weight: bold;
